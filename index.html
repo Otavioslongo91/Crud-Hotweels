@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Crud HotWheels </title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+    <header>
+        <h1> Crud de Miniaturas </h1>
+    </header>
+
+    <input type="text" id="Quantidade" placeholder="Quantidade">
+    
+    <input type="text" id="Marca" placeholder="Marca da miniatura">
+
+    <input type="text" id="Modelo" placeholder="Modelo da miniatura">
+
+   <input type="text" id="Cor" placeholder="Cor da miniatura">
+   
+    <input type="text" id="Ano" placeholder="Ano da miniatura">
+
+    <input type="file" id="imagem" accept="image/*">
+
+    <select id="TabelaDestino">
+        <option value="1"> HotWheels Mainline </option>
+        <option value="2"> HotWheels Premiun </option>
+        <option value="3"> Matchbox </option>
+        <option value="4"> Outras Marcas </option>
+    </select>
+
+
+    <button onclick="adicionarMiniatura()"> Adicionar </button>
+    
+<h2> Lista de Miniatura HotWheels Mainline  </h2>
+<table>
+    <thead>
+        <tr>
+            <th>Quantidade</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Cor</th>
+            <th>Ano</th>
+            <th>Imagem</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="table1"></tbody>
+</table>
+
+<h2> Lista de Miniatura HotWheels Premiun </h2>
+<table>
+    <thead>
+        <tr>
+            <th>Quantidade</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Cor</th>
+            <th>Ano</th>
+            <th>Imagem</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="table2"></tbody>
+</table>
+
+<h2> Lista de Miniatura Matchbox  </h2>
+<table>
+    <thead>
+        <tr>
+            <th>Quantidade</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Cor</th>
+            <th>Ano</th>
+            <th>Imagem</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="table3"></tbody>
+</table>
+
+<h2> Lista de Miniatura Outras marcas </h2>
+<table>
+    <thead>
+        <tr>
+            <th>Quantidade</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Cor</th>
+            <th>Ano</th>
+            <th>Imagem</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="table4"></tbody>
+</table>
+
+
+     <script src="script.js"> </script>
+
+
+</body>
+</html>

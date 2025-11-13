@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(204, 202, 202);
+    font-family: Lilita One;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+
+/* Subtítulo */
+h2 {
+    color: cadetblue;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: monospace;
+    
+}
+
+/* Inputs e botões */
+input, select, button {
+    margin-top: 20px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 60%;
+    border: 2px solid #0078b0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #9b00ff;
+    box-shadow: 0 0 8px #9b00ff7a;
+    outline: none;
+}
+
+button {
+    background-color: #0078b0;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #005b87;
+    transform: scale(1.03);
+}
+
+/* Centralizar tudo */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 10px auto; /* Isso centraliza */
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+/* Cabeçalho (thead) estilizado */
+thead {
+    background:  rgb(0, 56, 129);
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+/* Colunas e linhas */
+th, td {
+    font-size: 19px;
+    padding: 15px;
+    border: 5px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(odd) {
+    background-color: rgba(155, 0, 255, 0.26);
+}
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 120, 176, 0.07);
+}
+
+/* Hover nas linhas */
+tbody tr:hover {
+    background-color: rgba(146, 72, 196, 0.712);
+    transition: 0.2s;
+}
+
+/* Imagem na tabela */
+td img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #003881;
+}
+
+
+header {
+    background: url('https://www.10wallpaper.com/wallpaper/1920x1080/1512/line_obliquely_purple_bright-2015_Design_HD_Wallpaper_1920x1080.jpg');
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    padding: 0 16px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+header h1 {
+    margin: auto 10px;
+    font-size: 48px;
+    max-width: 700px;
+    line-height: 1.2;
+    animation: fadeInDown 1.5s ease forwards;
+}
