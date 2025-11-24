@@ -78,35 +78,35 @@ function adicionarMiniatura() {
 
     // --- Verificações ---
     if (Quantidade === "" || Marca === "" || Modelo === "" || Cor === "" || Ano === "" || !imagem) {
-        alert("Insira o que você ainda não inseriu, seu cabaço!");
+        alert("Insira o que você ainda não inseriu");
         return;
     }
 
     if (isNaN(Quantidade) || Number(Quantidade) <= 0) {
-        alert("Quantidade deve ser um número positivo, seu cabaço!");
+        alert("Quantidade deve ser um número positivo");
         return;
     }
 
     const anoRegex = /^\d{4}$/;
     const anoAtual = new Date().getFullYear();
     if (!anoRegex.test(Ano) || Number(Ano) <= 0 || Number(Ano) > anoAtual) {
-        alert("Ano inválido! Deve ter 4 dígitos e não pode ser futuro, seu cabaço!");
+        alert("Ano inválido! Deve ter 4 dígitos e não pode ser futuro,");
         return;
     }
 
     const apenasLetras = /^[A-Za-zÀ-ÿ\s]+$/;
     if (!apenasLetras.test(Cor)) {
-        alert("Cor só tem letra, sem número, artista confuso!");
+        alert("Cor só tem letra, sem número");
         return;
     }
 
     if (!apenasLetras.test(Marca)) {
-        alert("Marca é só letras, não outros tipos de caractere (corrija, seu cabaço)!");
+        alert("Marca é só letras, não outros tipos de caractere");
         return;
     }
 
     if (!imagem.type.startsWith("image/")) {
-        alert("Isso não é uma imagem, seu cabaço (corrija)!");
+        alert("Isso não é uma imagem");
         return;
     }
 
@@ -188,7 +188,7 @@ function editarCarrinho(index, numTabela) {
     const novoAno = prompt("Novo Ano:", lista[index].Ano);
 
     if (!novaQuantidade || !novaMarca || !novoModelo || !novaCor || !novoAno) {
-        alert("Preencha todos os campos, seu cabaço!");
+        alert("Preencha todos os campos");
         return;
     }
 
@@ -238,7 +238,7 @@ function editarFoto(index, numTabela, input) {
             return;
         }
 
-        // 🔧 Comprimir nova imagem antes de salvar
+        // Comprimir nova imagem antes de salvar
         comprimirImagem(novaImagem, 800, 800, 0.7, (novaImagemURL) => {
             lista[index].imagemURL = novaImagemURL;
             listarMiniatura(numTabela);
@@ -255,7 +255,7 @@ function excluirCarrinho(index, numTabela) {
     else if (numTabela === 3) lista = Carrinho3;
     else lista = Carrinho4;
 
-    if (confirm("Tem certeza que vai excluir, seu panaca?")) {
+    if (confirm("Tem certeza que vai excluir")) {
         lista.splice(index, 1);
         listarMiniatura(numTabela);
         salvarNoLocalStorage();
@@ -269,7 +269,7 @@ function excluirFoto(index, numTabela) {
     else if (numTabela === 3) lista = Carrinho3;
     else lista = Carrinho4;
 
-    if (confirm("Tem certeza que quer excluir a imagem, seu boboca?")) {
+    if (confirm("Tem certeza que quer excluir a imagem")) {
         lista[index].imagemURL = "";
         listarMiniatura(numTabela);
         salvarNoLocalStorage();
