@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(204, 202, 202);
+    font-family: 'Lilita One', 'Segoe UI', sans-serif;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+/* Subtítulo */
+h2 {
+    color: cadetblue;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: monospace;
+}
+
+/* Formulários (cadastro e edição) */
+.formulario input[type="text"],
+.formulario input[type="file"],
+.formulario select,
+.formulario > button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 60%;
+    border: 2px solid #0078b0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    transition: 0.3s;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    border-color: #9b00ff;
+    box-shadow: 0 0 8px #9b00ff7a;
+    outline: none;
+}
+
+.formulario > button {
+    background-color: #0078b0;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.formulario > button:hover {
+    background-color: #005b87;
+    transform: scale(1.03);
+}
+
+.formulario { margin-top: 20px; }
+
+/* Botões e links de ação dentro das tabelas */
+.btn {
+    display: inline-block;
+    margin: 4px;
+    padding: 8px 14px;
+    border: 2px solid #0078b0;
+    border-radius: 10px;
+    background-color: #0078b0;
+    color: white;
+    font: bold 15px 'Segoe UI', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover { background-color: #005b87; transform: scale(1.03); }
+.btn.perigo { background-color: #b00020; border-color: #b00020; }
+.btn.perigo:hover { background-color: #7f0017; }
+.btn.secundario { background-color: #555; border-color: #555; }
+td form { display: inline; }
+.acoes { text-align: center; margin-top: 10px; }
+
+/* Imagem atual na edição */
+.imagem-atual { width: 60%; margin: 10px auto; text-align: center; }
+.imagem-atual img {
+    width: 200px;
+    border-radius: 8px;
+    border: 2px solid #003881;
+    margin: 8px 0;
+}
+.imagem-atual input[type="file"] { width: 100%; }
+label.check { display: block; margin: 6px 0 12px; font-family: 'Segoe UI', sans-serif; }
+
+/* Mensagens */
+.msg {
+    width: 60%;
+    margin: 15px auto;
+    padding: 12px 18px;
+    border-radius: 10px;
+    list-style-position: inside;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+}
+.msg.sucesso { background: #d4edda; color: #1b5e20; border: 2px solid #1b5e20; }
+.msg.erro    { background: #f8d7da; color: #8a1020; border: 2px solid #8a1020; }
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+thead {
+    background: rgb(0, 56, 129);
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+th, td {
+    font-size: 19px;
+    padding: 15px;
+    border: 5px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(odd)  { background-color: rgba(155, 0, 255, 0.26); }
+tbody tr:nth-child(even) { background-color: rgba(0, 120, 176, 0.07); }
+tbody tr:hover { background-color: rgba(146, 72, 196, 0.712); transition: 0.2s; }
+
+td img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #003881;
+}
+
+/* Cabeçalho */
+header {
+    background: url('https://www.10wallpaper.com/wallpaper/1920x1080/1512/line_obliquely_purple_bright-2015_Design_HD_Wallpaper_1920x1080.jpg');
+    background-size: cover;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    padding: 0 16px;
+    text-align: center;
+}
+
+header h1 {
+    margin: auto 10px;
+    font-size: 48px;
+    max-width: 700px;
+    line-height: 1.2;
+    animation: fadeInDown 1.5s ease forwards;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}

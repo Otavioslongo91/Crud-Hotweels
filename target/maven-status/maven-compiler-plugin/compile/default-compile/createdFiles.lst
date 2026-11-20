@@ -1,0 +1,7 @@
+br\edu\ifc\miniaturas\controller\ImagemServlet.class
+br\edu\ifc\miniaturas\model\Miniatura.class
+br\edu\ifc\miniaturas\dao\MiniaturaDAO.class
+br\edu\ifc\miniaturas\model\Categoria.class
+br\edu\ifc\miniaturas\util\Conexao.class
+br\edu\ifc\miniaturas\controller\MiniaturaServlet.class
+br\edu\ifc\miniaturas\model\Imagem.class
